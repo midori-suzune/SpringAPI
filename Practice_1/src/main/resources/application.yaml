@@ -1,3 +1,19 @@
 spring:
-  application:
-    name: Practice_1
+  datasource:
+    url: jdbc:mysql://localhost:3306/practice_1?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: Suzune789@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+kind: Application
